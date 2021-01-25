@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Tracker {
-    List<Item> items = new ArrayList<Item>();
+    private List<Item> items = new ArrayList<Item>();
 
     private String generateId() {
         Random num = new Random();
@@ -39,8 +39,7 @@ public class Tracker {
 
     public List<Item> findByName(String name) {
         List<Item> result = new ArrayList<Item>();
-        for (int index = 0; index < items.size(); index++) {
-            Item item = items.get(index);
+        for (Item item : items) {
             if (item.getName().equals(name)) {
                 result.add(item);
             }
@@ -56,8 +55,8 @@ public class Tracker {
         boolean rsl = false;
         int index = indexOf(id);
         if (index != -1) {
-            items.get(index).setId(id);
-            items.get(index).setName(item.getName());
+            item.setId(id);
+            items.set(index, item);
             rsl = true;
         }
         return rsl;
