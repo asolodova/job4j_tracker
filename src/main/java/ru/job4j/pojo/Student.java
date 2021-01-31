@@ -6,6 +6,7 @@ public class Student {
     private String name;
     private String surname;
     private String group;
+    private Date entryDate;
 
     public String getName() {
         return name;
@@ -38,6 +39,4 @@ public class Student {
     public void setEntryDate(Date entryDate) {
         this.entryDate = entryDate;
     }
-
-    private Date entryDate;
 }

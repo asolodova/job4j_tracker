@@ -7,6 +7,11 @@ public class User {
     private String username;
     private boolean valid;
 
+    public User(String username, boolean valid) {
+        this.username = username;
+        this.valid = valid;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -23,11 +28,6 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(username, valid);
-    }
-
-    public User(String username, boolean valid) {
-        this.username = username;
-        this.valid = valid;
     }
 
     public String getUsername() {

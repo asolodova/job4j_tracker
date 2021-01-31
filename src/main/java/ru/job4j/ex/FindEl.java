@@ -32,7 +32,8 @@ public class FindEl {
 
     public static void main(String[] args) {
         try {
-            System.out.println(indexOf(new String[]{"Winter", "Spring", "Summer", "Autumn"}, "Autumn"));
+            System.out.println(indexOf(
+                    new String[]{"Winter", "Spring", "Summer", "Autumn"}, "Autumn"));
         } catch (ElementNotFoundException e) {
             e.printStackTrace();
         }

@@ -16,6 +16,7 @@ public class PriorityQueueTest {
         System.out.println(result);
         assertThat(result.getDesc(), is("urgent"));
     }
+
     @Test
     public void whenHigherPriority2() {
         PriorityQueue queue = new PriorityQueue();

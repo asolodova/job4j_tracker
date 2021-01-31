@@ -6,6 +6,15 @@ public class Bus implements Transport {
     private int oil;
     private int price;
 
+    public Bus(int passengers, int oil) {
+        this.passengers = passengers;
+        this.oil = oil;
+    }
+
+    public Bus(int passengers) {
+        this.passengers = passengers;
+    }
+
     public int getPassengers() {
         return passengers;
     }
@@ -20,15 +29,6 @@ public class Bus implements Transport {
 
     public void setOil(int oil) {
         this.oil = oil;
-    }
-
-    public Bus(int passengers, int oil) {
-        this.passengers = passengers;
-        this.oil = oil;
-    }
-
-    public Bus(int passengers) {
-        this.passengers = passengers;
     }
 
     @Override

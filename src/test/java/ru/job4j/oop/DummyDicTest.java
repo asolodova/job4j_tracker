@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-
 public class DummyDicTest {
 
     @Test
@@ -16,6 +15,7 @@ public class DummyDicTest {
         String expect = "Неизвестное слово. " + text;
         assertThat(testOut, is(expect));
     }
+
     @Test
     public void whenNull() {
         DummyDic word = new DummyDic();

@@ -2,7 +2,7 @@ package ru.job4j.oop;
 
 public class Jar {
 
-    public int value;
+    private int value;
 
     public Jar(int size) {
         this.value = size;

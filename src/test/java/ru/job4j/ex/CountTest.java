@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertThat;
 
-
 public class CountTest {
 
     @Test(expected = IllegalArgumentException.class)
@@ -18,5 +17,4 @@ public class CountTest {
         int rsl = Count.add(0, 3);
         assertThat(rsl, is(3));
     }
-
 }
