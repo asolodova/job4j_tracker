@@ -1,6 +1,7 @@
 package ru.job4j.tracker;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -70,5 +71,15 @@ public class Tracker {
             rsl = true;
         }
         return rsl;
+    }
+
+    public List<Item> itemSortAscending() {
+        Collections.sort(items);
+        return items;
+    }
+
+    public List<Item> itemSortDescending() {
+        Collections.sort(items, Collections.reverseOrder());
+        return items;
     }
 }
